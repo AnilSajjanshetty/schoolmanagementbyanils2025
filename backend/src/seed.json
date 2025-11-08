@@ -1,0 +1,412 @@
+{
+  "users": [
+    {
+      "_id": "6730a5f2c5f8a1b001000001",
+      "name": "Principal Sharma",
+      "email": "principal@school.com",
+      "role": "headmaster",
+      "phone": "9876543210",
+      "address": "Main Building Office"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000002",
+      "name": "Ravi Kumar",
+      "email": "ravi@school.com",
+      "role": "teacher",
+      "phone": "9876500000"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000003",
+      "name": "Priya Singh",
+      "email": "priya@school.com",
+      "role": "student"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000004",
+      "name": "Arjun Mehta",
+      "email": "arjun@school.com",
+      "role": "teacher"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000005",
+      "name": "Neha Gupta",
+      "email": "neha@school.com",
+      "role": "student"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000006",
+      "name": "Admin User",
+      "email": "admin@school.com",
+      "role": "admin"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000007",
+      "name": "Suresh Rao",
+      "email": "suresh@school.com",
+      "role": "class_teacher"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000008",
+      "name": "Anita Desai",
+      "email": "anita@school.com",
+      "role": "class_teacher"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000010",
+      "name": "Rohan Patel",
+      "email": "rohan@school.com",
+      "role": "student"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000011",
+      "name": "Kavya Sharma",
+      "email": "kavya@school.com",
+      "role": "student"
+    },
+    {
+      "_id": "6730a5f2c5f8a1b001000012",
+      "name": "Aryan Joshi",
+      "email": "aryan@school.com",
+      "role": "student"
+    }
+  ],
+
+  "subjects": [
+    { "_id": "6730a6f2c5f8a1b002000001", "name": "Mathematics", "code": "MATH101" },
+    { "_id": "6730a6f2c5f8a1b002000002", "name": "Science", "code": "SCI102" },
+    { "_id": "6730a6f2c5f8a1b002000003", "name": "English", "code": "ENG103" },
+    { "_id": "6730a6f2c5f8a1b002000004", "name": "Social Studies", "code": "SST104" },
+    { "_id": "6730a6f2c5f8a1b002000005", "name": "Computer Science", "code": "CSC105" },
+    { "_id": "6730a6f2c5f8a1b002000006", "name": "Hindi", "code": "HIND106" }
+  ],
+
+  "teachers": [
+    {
+      "_id": "6730a7f2c5f8a1b003000001",
+      "userId": "6730a5f2c5f8a1b001000002",
+      "subjects": ["6730a6f2c5f8a1b002000001", "6730a6f2c5f8a1b002000002"]
+    },
+    {
+      "_id": "6730a7f2c5f8a1b003000002",
+      "userId": "6730a5f2c5f8a1b001000004",
+      "subjects": ["6730a6f2c5f8a1b002000003", "6730a6f2c5f8a1b002000005"]
+    },
+    {
+      "_id": "6730a7f2c5f8a1b003000003",
+      "userId": "6730a5f2c5f8a1b001000007",
+      "subjects": ["6730a6f2c5f8a1b002000001", "6730a6f2c5f8a1b002000002", "6730a6f2c5f8a1b002000003"]
+    },
+    {
+      "_id": "6730a7f2c5f8a1b003000004",
+      "userId": "6730a5f2c5f8a1b001000008",
+      "subjects": ["6730a6f2c5f8a1b002000004", "6730a6f2c5f8a1b002000006"]
+    },
+    {
+      "_id": "6730a7f2c5f8a1b003000005",
+      "userId": "6730a5f2c5f8a1b001000002",
+      "subjects": ["6730a6f2c5f8a1b002000005"]
+    }
+   
+  ],
+
+  "classes": [
+     {
+      "_id": "6730a8f2c5f8a1b004000001",
+      "name": "10th Grade",
+      "section": "A",
+      "classTeacherId": "6730a7f2c5f8a1b003000003",
+      "subjectTeachers": [
+    {
+      "teacherId": "6730a7f2c5f8a1b003000002",   
+      "subjectId": "6730a6f2c5f8a1b002000003"
+    },
+    {
+      "teacherId": "6730a7f2c5f8a1b003000001",   
+      "subjectId": "6730a6f2c5f8a1b002000001"
+    }
+  ],
+      "subjects": [
+        "6730a6f2c5f8a1b002000001",
+        "6730a6f2c5f8a1b002000002",
+        "6730a6f2c5f8a1b002000003"
+      ]
+    },
+    {
+      "_id": "6730a8f2c5f8a1b004000002",
+      "name": "9th Grade",
+      "section": "B",
+      "classTeacherId": "6730a7f2c5f8a1b003000004",
+      "subjects": ["6730a6f2c5f8a1b002000003", "6730a6f2c5f8a1b002000004", "6730a6f2c5f8a1b002000006"]
+    },
+    {
+      "_id": "6730a8f2c5f8a1b004000003",
+      "name": "8th Grade",
+      "section": "A",
+      "classTeacherId": "6730a7f2c5f8a1b003000001",
+      "subjects": ["6730a6f2c5f8a1b002000001", "6730a6f2c5f8a1b002000002"]
+    }
+  ],
+
+  "students": [
+    {
+      "_id": "6730a9f2c5f8a1b005000001",
+      "userId": "6730a5f2c5f8a1b001000003",
+      "classId": "6730a8f2c5f8a1b004000001",
+      "rollNumber": 1
+    },
+    {
+      "_id": "6730a9f2c5f8a1b005000002",
+      "userId": "6730a5f2c5f8a1b001000005",
+      "classId": "6730a8f2c5f8a1b004000002",
+      "rollNumber": 2
+    },
+    {
+      "_id": "6730a9f2c5f8a1b005000003",
+      "userId": "6730a5f2c5f8a1b001000010",
+      "classId": "6730a8f2c5f8a1b004000001",
+      "rollNumber": 3
+    },
+    {
+      "_id": "6730a9f2c5f8a1b005000004",
+      "userId": "6730a5f2c5f8a1b001000011",
+      "classId": "6730a8f2c5f8a1b004000001",
+      "rollNumber": 4
+    },
+    {
+      "_id": "6730a9f2c5f8a1b005000005",
+      "userId": "6730a5f2c5f8a1b001000012",
+      "classId": "6730a8f2c5f8a1b004000002",
+      "rollNumber": 5
+    },
+    {
+      "_id": "6730a9f2c5f8a1b005000006",
+      "userId": "6730a5f2c5f8a1b001000003",
+      "classId": "6730a8f2c5f8a1b004000003",
+      "rollNumber": 6
+    }
+  ],
+
+  "timetables": [
+    {
+      "_id": "6730aaf2c5f8a1b006000001",
+      "classId": "6730a8f2c5f8a1b004000001",
+      "teacherId": "6730a7f2c5f8a1b003000002",   
+      "subjectId": "6730a6f2c5f8a1b002000003",  
+      "day": "Monday",
+      "period": 1,
+      "startTime": "09:00 AM",
+      "endTime": "09:45 AM",
+      "room": "Room 101"
+    },
+    {
+      "_id": "6730aaf2c5f8a1b006000002",
+      "classId": "6730a8f2c5f8a1b004000001",
+      "teacherId": "6730a7f2c5f8a1b003000003",
+      "subjectId": "6730a6f2c5f8a1b002000002",
+      "day": "Tuesday",
+      "period": 2,
+      "startTime": "10:00 AM",
+      "endTime": "10:45 AM",
+      "room": "Lab 1"
+    },
+    {
+      "_id": "6730aaf2c5f8a1b006000003",
+      "classId": "6730a8f2c5f8a1b004000002",
+      "teacherId": "6730a7f2c5f8a1b003000004",
+      "subjectId": "6730a6f2c5f8a1b002000004",
+      "day": "Wednesday",
+      "period": 1,
+      "startTime": "09:00 AM",
+      "endTime": "09:45 AM",
+      "room": "Room 102"
+    },
+    {
+      "_id": "6730aaf2c5f8a1b006000004",
+      "classId": "6730a8f2c5f8a1b004000003",
+      "teacherId": "6730a7f2c5f8a1b003000001",
+      "subjectId": "6730a6f2c5f8a1b002000001",
+      "day": "Thursday",
+      "period": 3,
+      "startTime": "11:00 AM",
+      "endTime": "11:45 AM",
+      "room": "Room 103"
+    },
+    {
+      "_id": "6730aaf2c5f8a1b006000005",
+      "classId": "6730a8f2c5f8a1b004000001",
+      "teacherId": "6730a7f2c5f8a1b003000005",
+      "subjectId": "6730a6f2c5f8a1b002000005",
+      "day": "Friday",
+      "period": 4,
+      "startTime": "12:00 PM",
+      "endTime": "12:45 PM",
+      "room": "Computer Lab"
+    }
+  ],
+
+"attendance": [
+  {
+    "studentId": "6730a9f2c5f8a1b005000001",
+    "classId": "6730a8f2c5f8a1b004000001",
+    "date": "2025-11-01T00:00:00.000Z",
+    "status": "present"
+  },
+  {
+    "studentId": "6730a9f2c5f8a1b005000001",
+    "classId": "6730a8f2c5f8a1b004000001",
+    "date": "2025-11-02T00:00:00.000Z",
+    "status": "absent"
+  },
+  {
+    "studentId": "6730a9f2c5f8a1b005000001",
+    "classId": "6730a8f2c5f8a1b004000001",
+    "date": "2025-11-03T00:00:00.000Z",
+    "status": "present"
+  },
+  {
+    "studentId": "6730a9f2c5f8a1b005000003",
+    "classId": "6730a8f2c5f8a1b004000001",
+    "date": "2025-11-01T00:00:00.000Z",
+    "status": "present"
+  },
+  {
+    "studentId": "6730a9f2c5f8a1b005000004",
+    "classId": "6730a8f2c5f8a1b004000001",
+    "date": "2025-11-02T00:00:00.000Z",
+    "status": "absent"
+  }
+],
+
+  "events": [
+    {
+      "_id": "6730aef2c5f8a1b010000001",
+      "title": "Annual Day Celebration",
+      "content": "Cultural programs, awards, and performances by students.",
+      "date": "2025-12-20T00:00:00.000Z",
+      "public": true
+    },
+    {
+      "_id": "6730aef2c5f8a1b010000002",
+      "title": "Science Exhibition",
+      "content": "Students showcase innovative science models and experiments.",
+      "date": "2025-11-25T00:00:00.000Z",
+      "public": true
+    },
+    {
+      "_id": "6730aef2c5f8a1b010000003",
+      "title": "Sports Day",
+      "content": "Annual sports meet with track and field events.",
+      "date": "2025-12-05T00:00:00.000Z",
+      "public": true
+    },
+    {
+      "_id": "6730aef2c5f8a1b010000004",
+      "title": "Independence Day",
+      "content": "Flag hoisting, speeches, and patriotic songs.",
+      "date": "2025-08-15T00:00:00.000Z",
+      "public": true
+    },
+    {
+      "_id": "6730aef2c5f8a1b010000005",
+      "title": "Teacher's Day",
+      "content": "Students honor teachers with performances and gifts.",
+      "date": "2025-09-05T00:00:00.000Z",
+      "public": true
+    }
+  ],
+
+  "announcements": [
+    {
+      "_id": "6730aff2c5f8a1b011000001",
+      "title": "Winter Vacation Notice",
+      "content": "School will remain closed from Dec 25 to Jan 2 for winter break.",
+      "date": "2025-12-10T00:00:00.000Z",
+      "visibility": "public"
+    },
+    {
+      "_id": "6730aff2c5f8a1b011000002",
+      "title": "Parent-Teacher Meeting",
+      "content": "PTM scheduled on Nov 18 from 9 AM to 1 PM.",
+      "date": "2025-11-10T00:00:00.000Z",
+      "visibility": "public"
+    },
+    {
+      "_id": "6730aff2c5f8a1b011000003",
+      "title": "Exam Schedule",
+      "content": "Mid-term exams from Nov 15 to Nov 30. Check timetable.",
+      "date": "2025-11-05T00:00:00.000Z",
+      "visibility": "public"
+    },
+    {
+      "_id": "6730aff2c5f8a1b011000004",
+      "title": "Library Renovation",
+      "content": "Library closed for renovation from Nov 20 to Nov 25.",
+      "date": "2025-11-18T00:00:00.000Z",
+      "visibility": "public"
+    },
+    {
+      "_id": "6730aff2c5f8a1b011000005",
+      "title": "Fee Payment Reminder",
+      "content": "Last date for fee submission is Nov 30. Late fee applicable.",
+      "date": "2025-11-25T00:00:00.000Z",
+      "visibility": "public"
+    }
+  ],
+
+  "contactMessages": [
+    {
+      "_id": "672a7a2f1b2e2a0012345671",
+      "studentId": "6730a9f2c5f8a1b005000001",
+      "teacherId": "6730a7f2c5f8a1b003000003",
+      "type": "inquiry",
+      "message": "Can you please clarify the syllabus for the upcoming science exam?",
+      "status": "pending",
+      "date": "2025-11-01T10:30:00.000Z"
+    },
+    {
+      "_id": "672a7a2f1b2e2a0012345672",
+      "studentId": "6730a9f2c5f8a1b005000002",
+      "teacherId": "6730a7f2c5f8a1b003000004",
+      "type": "complaint",
+      "message": "The classroom projector has not been working for the last week.",
+      "status": "read",
+      "date": "2025-10-29T09:15:00.000Z"
+    },
+    {
+      "_id": "672a7a2f1b2e2a0012345673",
+      "studentId": "6730a9f2c5f8a1b005000003",
+      "teacherId": "6730a7f2c5f8a1b003000001",
+      "type": "feedback",
+      "message": "The new online portal is very helpful and easy to use.",
+      "status": "resolved",
+      "date": "2025-10-20T14:45:00.000Z"
+    },
+    {
+      "_id": "672a7a2f1b2e2a0012345674",
+      "studentId": "6730a9f2c5f8a1b005000004",
+      "teacherId": "6730a7f2c5f8a1b003000003",
+      "type": "inquiry",
+      "message": "When will the annual sports event be scheduled?",
+      "status": "pending",
+      "date": "2025-11-02T08:00:00.000Z"
+    },
+    {
+      "_id": "672a7a2f1b2e2a0012345675",
+      "studentId": "6730a9f2c5f8a1b005000005",
+      "teacherId": "6730a7f2c5f8a1b003000004",
+      "type": "complaint",
+      "message": "The water cooler on the second floor is leaking.",
+      "status": "resolved",
+      "date": "2025-10-27T07:30:00.000Z"
+    },
+    {
+      "_id": "672a7a2f1b2e2a0012345676",
+      "studentId": "6730a9f2c5f8a1b005000006",
+      "teacherId": "6730a7f2c5f8a1b003000001",
+      "type": "feedback",
+      "message": "The math worksheets are very helpful for practice.",
+      "status": "read",
+      "date": "2025-11-03T12:00:00.000Z"
+    }
+  ]
+}
